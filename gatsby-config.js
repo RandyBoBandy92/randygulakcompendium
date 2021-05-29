@@ -1,13 +1,13 @@
 require(`dotenv`).config({
   path: `.env`,
-})
+});
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE;
 
 module.exports = {
   siteMetadata: {
     siteTitleAlt: `Minimal Blog - Gatsby Theme`,
-    siteTitle: 'Randy Gulak',
+    siteTitle: "Randy Gulak",
   },
   plugins: [
     {
@@ -26,22 +26,18 @@ module.exports = {
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
-          },
-          {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Garden`,
+            url: `https://publish.obsidian.md/randybobandy/`,
           },
         ],
       },
     },
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-google-analytics`,
+    //   options: {
+    //     trackingId: process.env.GOOGLE_ANALYTICS_ID,
+    //   },
+    // },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
@@ -79,4 +75,4 @@ module.exports = {
       },
     },
   ].filter(Boolean),
-}
+};

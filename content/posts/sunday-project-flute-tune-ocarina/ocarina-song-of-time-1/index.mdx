@@ -1,0 +1,101 @@
+---
+title: Sunday Project - Making my own ocarina sheet music
+date: 2021-06-06
+tags:
+  - ocarina
+---
+
+As discussed [previously](https://randygulak.com/learning-the-ocarina-w-spaced-repetition-update-1), I want to learn how to play [The Flute Tune](https://www.youtube.com/watch?v=IwLSrNu1ppI) by Soulpride.
+
+I managed to track down some sheet music
+![](https://i.imgur.com/1Rj5qOf.png)
+
+**But** it's in the wrong key, I don't know what key it is, and I don't know what most of these notes mean.
+
+**\*_googles furiously_\***
+
+So apparantly I can do something called "transposing" to bring it down to the key of my Ocarina.
+
+It appears my options are:
+
+1. Learn how to do this
+2. Find an application that already does this
+
+...so I found this neat app called [musescore](https://musescore.com/) and was able to transpose the sheet music.
+
+![](https://i.imgur.com/PHITwZ1.png)
+
+Only one problem, my ape brain still doesn't understand 75% of these dang squiggly lines.
+
+It appears my options are:
+
+1. ~~Learn how to do this~~
+2. ~~Find an application that already does this~~
+3. Learn how to write sheet music (badly)
+
+ok so there's a free program called [LilyPond](http://lilypond.org/) that does exactly what I need.
+
+Let's read the docs for 5 minutes and then mash a bunch of garbage into a text file in vim until it starts to make sense, shall we?
+
+```
+  \header {
+  title = "The Flute Tune (Soulpride Remix) - Ocarina"
+  }
+
+  \relative
+  {
+           \time 4/4
+           \clef "treble"
+           \key c \major
+           \tempo 4 = 120
+           a' a a b c b a
+           d, d d f a
+           b b b c
+           a a a b g g
+           f f e e d d c c d e e2 r2
+           f4 g a a r8 a b a g
+  }
+```
+
+and uhh... VOILA!
+
+![](https://i.imgur.com/9zknrJV.png)
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/ulnIs_Rj09s"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+just kidding, Lol
+
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/V7xhZMW1bws"
+  title="YouTube video player"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+  allowfullscreen
+></iframe>
+
+But not bad, hey?
+
+This was fun, I had to come up with the notes myself by ear which is not something I've ever done before.
+
+It ain't perfect, but..
+
+<iframe
+  src="https://giphy.com/embed/3oKIPq85JzxPQglR8A"
+  width="480"
+  height="270"
+  frameBorder="0"
+  class="giphy-embed"
+  allowFullScreen
+></iframe>
+
+k bye

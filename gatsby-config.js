@@ -33,6 +33,10 @@ module.exports = {
             name: `Garden`,
             url: `https://publish.obsidian.md/randybobandy/`,
           },
+          {
+            name: "BCIT Portfolio",
+            url: "https://bcit-portfolio.randygulak.com"
+          },
         ],
       },
     },

@@ -35,7 +35,7 @@ module.exports = {
           },
           {
             name: "BCIT Portfolio",
-            url: "https://bcit-portfolio.randygulak.com"
+            url: "https://www.randygulak.com"
           },
         ],
       },
